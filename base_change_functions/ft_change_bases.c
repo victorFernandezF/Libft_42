@@ -6,11 +6,11 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 10:07:22 by victofer          #+#    #+#             */
-/*   Updated: 2022/10/13 13:29:42 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/10 12:07:52 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_bin_to_dec(int num)
 {

@@ -6,11 +6,11 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 19:48:27 by victofer          #+#    #+#             */
-/*   Updated: 2022/09/24 14:02:12 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/10 12:00:26 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "../libft.h"
 
 static int	ft_is_sign(char n)
 {

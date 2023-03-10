@@ -6,11 +6,11 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 11:36:17 by victofer          #+#    #+#             */
-/*   Updated: 2022/10/11 18:02:21 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/10 12:14:31 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static int	ft_ptr_len(uintptr_t ptr)
 {

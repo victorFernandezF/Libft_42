@@ -6,11 +6,11 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 19:22:04 by victofer          #+#    #+#             */
-/*   Updated: 2022/10/11 18:02:14 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/10 12:14:27 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static int	ft_hexa_len(unsigned int num)
 {

@@ -6,11 +6,11 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 18:04:13 by victofer          #+#    #+#             */
-/*   Updated: 2022/10/11 18:02:18 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/10 12:14:29 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_print_int(int n)
 {

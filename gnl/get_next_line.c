@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:30:36 by victofer          #+#    #+#             */
-/*   Updated: 2022/10/25 19:07:09 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/10 12:15:31 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_join_free(char *buffer, char *buff)
 {
@@ -97,16 +97,16 @@ char	*ft_read(int fd, char *str)
 
 char	*get_next_line(int fd)
 {
-	static char	*str[OPEN_MAX];
+	static char	*str;
 	char		*line;
 
-	if (fd < 0 || fd > OPEN_MAX || BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	str[fd] = ft_read(fd, str[fd]);
-	if (!str[fd])
+	str = ft_read(fd, str);
+	if (!str)
 		return (NULL);
-	line = get_line_gnl(str[fd]);
-	str[fd] = save_rest(str[fd]);
+	line = get_line_gnl(str);
+	str = save_rest(str);
 	if (!line)
 	{
 		free(line);

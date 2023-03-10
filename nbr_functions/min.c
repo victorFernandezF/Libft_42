@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_put_bin.c                                       :+:      :+:    :+:   */
+/*   min.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 19:29:01 by victofer          #+#    #+#             */
-/*   Updated: 2022/10/13 10:40:16 by victofer         ###   ########.fr       */
+/*   Created: 2022/10/26 18:28:06 by victofer          #+#    #+#             */
+/*   Updated: 2023/03/10 12:00:35 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void	ft_put_bin(unsigned int num)
+int	min(int *tab, unsigned int len)
 {
-	int	i;
+	int				min;
+	unsigned int	i;
 
+	min = tab[0];
 	i = 0;
-	if (num >= 2)
+	while (i <= len)
 	{
-		ft_put_bin(num / 2);
-		ft_put_bin(num % 2);
+		if (i == len - 1)
+			if (tab[i] < min)
+				min = tab[i];
+		if ((tab[i] < tab[i + 1]) && (tab[i] < min))
+			min = tab[i];
+		i++;
 	}
-	else
-	{
-		ft_putchar_fd(num + 48, 1);
-	}
+	return (min);
 }

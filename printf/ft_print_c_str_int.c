@@ -1,32 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   min.c                                              :+:      :+:    :+:   */
+/*   ft_print_c_str_int.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/26 18:28:06 by victofer          #+#    #+#             */
-/*   Updated: 2022/11/23 19:39:27 by victofer         ###   ########.fr       */
+/*   Created: 2022/10/07 11:29:14 by victofer          #+#    #+#             */
+/*   Updated: 2023/03/10 12:14:22 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int	min(int *tab, unsigned int len)
+int	ft_print_char(int c)
 {
-	int				min;
-	unsigned int	i;
+	write(1, &c, 1);
+	return (1);
+}
 
-	min = tab[0];
+int	ft_print_string(char *s)
+{
+	int	i;
+
 	i = 0;
-	while (i <= len)
+	if (s == NULL)
 	{
-		if (i == len - 1)
-			if (tab[i] < min)
-				min = tab[i];
-		if ((tab[i] < tab[i + 1]) && (tab[i] < min))
-			min = tab[i];
+		ft_putstr_fd("(null)", 1);
+		return (6);
+	}
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], 1);
 		i++;
 	}
-	return (min);
+	return (i);
+}
+
+int	ft_print_int(int n)
+{
+	int		ret;
+	char	*num;
+
+	ret = 0;
+	num = ft_itoa(n);
+	ret += ft_print_string(num);
+	free (num);
+	return (ret);
 }

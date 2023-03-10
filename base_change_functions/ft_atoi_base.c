@@ -6,11 +6,11 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 13:26:47 by victofer          #+#    #+#             */
-/*   Updated: 2022/11/04 16:03:10 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/10 12:06:42 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_spaces(char c)
 {
@@ -63,13 +63,4 @@ int	ft_atoi_base(char *str, int base)
 	if (neg)
 		return (-res);
 	return (res);
-}
-
-int	main(int argc, char **argv)
-{
-	if (argc != 3)
-		return (0);
-	if (atoi(argv[2]) > 16)
-		return (0);
-	printf("%i", ft_atoi_base(argv[1], atoi(argv[2])));
 }

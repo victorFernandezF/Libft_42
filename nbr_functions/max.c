@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_put_oct.c                                       :+:      :+:    :+:   */
+/*   max.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 19:27:58 by victofer          #+#    #+#             */
-/*   Updated: 2022/10/11 19:32:23 by victofer         ###   ########.fr       */
+/*   Created: 2022/10/26 18:16:13 by victofer          #+#    #+#             */
+/*   Updated: 2023/03/10 12:00:32 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void	ft_put_oct(unsigned int num)
+int	max(int *tab, unsigned int len)
 {
-	int	i;
+	int				max;
+	unsigned int	i;
 
+	max = 0;
 	i = 0;
-	if (num >= 8)
+	while (i <= len)
 	{
-		ft_put_oct(num / 8);
-		ft_put_oct(num % 8);
+		if (i == len - 1)
+			if (tab[i] > max)
+				max = tab[i];
+		if ((tab[i] > tab[i + 1]) && (tab[i] > max))
+			max = tab[i];
+		i++;
 	}
-	else
-	{
-		ft_putchar_fd(num + 48, 1);
-	}
+	return (max);
 }

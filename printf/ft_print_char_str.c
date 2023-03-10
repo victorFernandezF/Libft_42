@@ -1,32 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   max.c                                              :+:      :+:    :+:   */
+/*   ft_print_char_str.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/26 18:16:13 by victofer          #+#    #+#             */
-/*   Updated: 2022/10/26 18:16:43 by victofer         ###   ########.fr       */
+/*   Created: 2022/10/07 11:29:14 by victofer          #+#    #+#             */
+/*   Updated: 2023/03/10 12:14:25 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int	max(int *tab, unsigned int len)
+static void	ft_putstr(char *s, int fd)
 {
-	int				max;
-	unsigned int	i;
+	int	i;
 
-	max = 0;
+	fd = 1;
 	i = 0;
-	while (i <= len)
+	while (s[i])
 	{
-		if (i == len - 1)
-			if (tab[i] > max)
-				max = tab[i];
-		if ((tab[i] > tab[i + 1]) && (tab[i] > max))
-			max = tab[i];
+		ft_putchar_fd(s[i], 1);
 		i++;
 	}
-	return (max);
+}
+
+int	ft_print_char(int c)
+{
+	write(1, &c, 1);
+	return (1);
+}
+
+int	ft_print_string(char *s)
+{
+	int	i;
+
+	i = 0;
+	if (s == NULL)
+	{
+		ft_putstr("(null)", 1);
+		return (6);
+	}
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], 1);
+		i++;
+	}
+	return (i);
 }
