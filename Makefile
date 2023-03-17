@@ -6,7 +6,7 @@
 #    By: victofer <victofer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/26 09:36:58 by victofer          #+#    #+#              #
-#    Updated: 2023/03/10 12:29:52 by victofer         ###   ########.fr        #
+#    Updated: 2023/03/17 10:26:54 by victofer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,14 +19,14 @@ SRC		=	mem_functions/ft_memcpy.c mem_functions/ft_memmove.c mem_functions/ft_mem
 			mem_functions/ft_memcmp.c mem_functions/ft_calloc.c mem_functions/ft_memset.c \
 			str_functions/ft_isalpha.c str_functions/ft_isdigit.c str_functions/ft_isalnum.c \
 			str_functions/ft_isascii.c str_functions/ft_isprint.c str_functions/ft_strlen.c \
-			str_functions/ft_bzero.c str_functions/ft_strlcpy.c str_functions/ft_strlcat.c \
-			str_functions/ft_toupper.c str_functions/ft_tolower.c str_functions/ft_strchr.c \
-			str_functions/ft_strrchr.c str_functions/ft_strncmp.c  str_functions/ft_strnstr.c \
+			str_functions/ft_bzero.c str_functions/ft_strcpy.c str_functions/ft_strlcpy.c \
+			str_functions/ft_strlcat.c str_functions/ft_toupper.c str_functions/ft_tolower.c \
+			str_functions/ft_strchr.c str_functions/ft_strrchr.c str_functions/ft_strncmp.c \
+			str_functions/ft_strnstr.c str_functions/ft_str_rev.c str_functions/ft_split.c \
 			str_functions/ft_strdup.c str_functions/ft_substr.c str_functions/ft_strjoin.c \
 			str_functions/ft_strtrim.c str_functions/ft_itoa.c str_functions/ft_strmapi.c \
 			str_functions/ft_striteri.c str_functions/ft_putchar_fd.c str_functions/ft_putstr_fd.c \
-			str_functions/ft_putendl_fd.c str_functions/ft_putnbr_fd.c str_functions/ft_split.c \
-			str_functions/ft_str_rev.c \
+			str_functions/ft_putendl_fd.c str_functions/ft_putnbr_fd.c\
 			nbr_functions/max.c nbr_functions/min.c nbr_functions/ft_atoi.c \
 			base_change_functions/ft_put_hexa.c base_change_functions/ft_put_bin.c \
 			base_change_functions/ft_put_oct.c base_change_functions/ft_atoi_base.c\
