@@ -23,7 +23,7 @@ with your own. Take the time to expand your libft throughout the year.
 
 ### STATUS
 
-| Project Status      |  In progress                 |
+| Project Status      |  Finished (May be updated)   |
 |---------------------|------------------------------|
 | Project Mark        |  ![GitHub code size in bytes](https://img.shields.io/badge/RESULTADO-100%25-green)|
 
