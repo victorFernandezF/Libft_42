@@ -6,12 +6,11 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 14:05:23 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/10 11:53:38 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/17 11:18:45 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

@@ -6,16 +6,21 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 18:35:15 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/17 10:45:30 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/17 10:58:59 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
 /*
-*	Returns 1 if the given argument is alphabets of digit. If not, it returns 0
-*	@param c char that will be checked
-*/
+ * Function: ft_isalnum
+ * ----------------------------
+ *   Checks if a given char is alphanumeric (letters or numbers)
+ *
+ *   c: char to be check. 
+ *  
+ *   Returns: 1 if is alphanumeric and 0 if not.
+ */
 int	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))

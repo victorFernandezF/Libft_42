@@ -6,7 +6,7 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 15:27:10 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/17 10:41:31 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/17 11:23:38 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,31 +29,25 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
-// S T R I N G F U N C T I O N S
+//	S T R I N G   F U N C T I O N S
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
-size_t	ft_strlen(const char *s);
+size_t	ft_strlen(const char *str);
 char	*ft_strcpy(char *dst, const char *src);
-void	*ft_memset(void *b, int c, size_t len);
 void	*ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-void	*ft_memmove(void *dst, const void *src, size_t len);
+char	*ft_str_rev(char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-void	*ft_memchr(const void *s, int c, size_t n);
-int		ft_memcmp(void *s1, void *s2, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-int		ft_atoi(const char *str);
-void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char *s1, char *s2);
@@ -67,7 +61,31 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-/* BONUS */
+//	M E M O R Y   F U N C T I O N S
+void	*ft_memset(void *b, int c, size_t len);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(void *s1, void *s2, size_t n);
+void	*ft_calloc(size_t count, size_t size);
+
+//	N U M B E R  S   F U N C T I O N S
+
+int		ft_atoi(const char *str);
+int		max(int *tab, unsigned int len);
+int		min(int *tab, unsigned int len);
+int		ft_pow(int n, int pow);
+
+//	B A S E   C H A N G E   F U N C T I O N S
+void	ft_put_bin(unsigned int num);
+void	ft_put_oct(unsigned int num);
+void	ft_put_hexa(unsigned int num);
+int		ft_bin_to_dec(int num);
+int		ft_dec_to_bin(int num);
+int		ft_dec_to_oct(int num);
+char	*ft_dec_to_hexa(int num);
+
+//	L I S T   F U N C T I O N S   ( B O N U S )
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
@@ -78,20 +96,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-/* MORE FUNCTIONS ADDED  */
-void	ft_put_bin(unsigned int num);
-void	ft_put_oct(unsigned int num);
-void	ft_put_hexa(unsigned int num);
-char	*ft_str_rev(char *str);
-int		ft_bin_to_dec(int num);
-int		ft_dec_to_bin(int num);
-int		ft_dec_to_oct(int num);
-char	*ft_dec_to_hexa(int num);
-int		max(int *tab, unsigned int len);
-int		min(int *tab, unsigned int len);
-int		ft_pow(int n, int pow);
-
-//FT_PRINTF AND RELATED FUNCTIONS
+//	---- FT_PRINTF ----
 int		ft_printf(char const *input, ...);
 int		ft_print_char(int c);
 int		ft_print_unsigned(unsigned int n);
@@ -101,7 +106,7 @@ int		ft_print_string(char *s);
 int		ft_print_int(int n);
 int		ft_print_hexa(unsigned int num, char format);
 
-// GET_NEXT_LINE AND RELATED FUNCTIONS
+//	---- GET_NEXT_LINE ----
 
 char	*get_next_line(int fd);
 char	*ft_read(int fd, char *str);
