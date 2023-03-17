@@ -6,12 +6,22 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 14:05:23 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/17 11:18:45 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/17 11:34:46 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
+/* 
+ * Function: ft_strlcat
+ * ----------------------------
+ *   Copies up to dstsize - 1 characters from the string src to dst
+ *
+ *   dst: variable where the function will copy 
+ *   src: variable that we want to copy
+ * 	 dstsize: size we want to copy
+ *   Returns: The total length of the string they tried to create
+ */
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;

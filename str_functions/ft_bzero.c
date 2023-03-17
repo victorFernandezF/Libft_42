@@ -6,14 +6,14 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 18:38:52 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/17 11:17:37 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/17 11:25:08 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
 /* 
- * Function: ft_memset
+ * Function: ft_bzero
  * ----------------------------
  *   Writes n zeroed bytes to string s. If n is zero, does nothing.
  *

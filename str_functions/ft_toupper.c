@@ -6,20 +6,20 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 18:37:01 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/17 10:52:52 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/17 11:36:55 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+
 /*
- * Function: square_the_biggest
+ * Function: ft_tolower
  * ----------------------------
- *   Returns the square of the largest of its two input values
+ *   Converts a given char in ¡to lowercase
  *
- *   n1: one real value 
- *   n2: the other real value
- *
- *   returns: the square of the larger of n1 and n2 
+ *   c: char to be converted. 
+ *  
+ *   Returns: c but in upurcase
  */
 int	ft_tolower(int c)
 {
