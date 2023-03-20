@@ -6,7 +6,7 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 15:27:10 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 11:52:39 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/20 12:16:48 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,16 +75,12 @@ void	*ft_calloc(size_t count, size_t size);
 int		ft_atoi(const char *str);
 int		max(int *tab, unsigned int len);
 int		min(int *tab, unsigned int len);
-int		ft_pow(int n, int pow);
+int		ft_pow(int x, int pow);
 
 //	B A S E   C H A N G E   F U N C T I O N S
-void	ft_put_bin(unsigned int num);
-void	ft_put_oct(unsigned int num);
-void	ft_put_hexa(unsigned int num);
+
+int		ft_atoi_base(char *str, int base);
 int		ft_bin_to_dec(int num);
-int		ft_dec_to_bin(int num);
-int		ft_dec_to_oct(int num);
-char	*ft_dec_to_hexa(int num);
 
 //	L I S T   F U N C T I O N S   ( B O N U S )
 t_list	*ft_lstnew(void *content);
