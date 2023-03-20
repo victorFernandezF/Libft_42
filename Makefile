@@ -6,7 +6,7 @@
 #    By: victofer <victofer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/26 09:36:58 by victofer          #+#    #+#              #
-#    Updated: 2023/03/17 10:26:54 by victofer         ###   ########.fr        #
+#    Updated: 2023/03/20 18:19:29 by victofer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRC		=	mem_functions/ft_memcpy.c mem_functions/ft_memmove.c mem_functions/ft_mem
 			str_functions/ft_strdup.c str_functions/ft_substr.c str_functions/ft_strjoin.c \
 			str_functions/ft_strtrim.c str_functions/ft_itoa.c str_functions/ft_strmapi.c \
 			str_functions/ft_striteri.c str_functions/ft_putchar_fd.c str_functions/ft_putstr_fd.c \
-			str_functions/ft_putendl_fd.c str_functions/ft_putnbr_fd.c\
+			str_functions/ft_putel_fd.c str_functions/ft_putnbr_fd.c\
 			nbr_functions/max.c nbr_functions/min.c nbr_functions/ft_atoi.c \
 			base_change_functions/ft_put_hexa.c base_change_functions/ft_put_bin.c \
 			base_change_functions/ft_put_oct.c base_change_functions/ft_atoi_base.c\
@@ -49,22 +49,30 @@ R		=	\033[0;31m
 B		=	\033[0;34m
 Y 		=	\033[0;93m
 M		=	\033[0;95m
-END		=	\033[0m
+E		=	\033[0m
 
 #  - RULES - 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
-	@echo "$(G) $@ Compiled successfully $(END)"
+	@echo "$(G) $@ Compiled successfully $(E)"
 
 bonus: $(OBJ) $(OBJ_B)
 	ar rcs $(NAME) $(OBJ) $(OBJ_B)
-	@echo "$(G) $@ Bonus Compiled successfully $(END)"
+	@echo "$(G) $@ Bonus Compiled successfully $(E)"
+
+norminette:
+	@echo ""
+	@echo "$(Y) ---- N O R M I N E T T E ----$(E)"
+	@sleep 1
+	@echo "$(BOLD)"
+	@norminette
+	@echo "$(Y)------- $(G)EVERITHING OK$(Y) -------$(E)"
 
 clean:
 	rm -f $(OBJ) $(OBJ_B)
-	@echo "$(M) Everything cleaned $(END)"
+	@echo "$(M) Everything cleaned $(E)"
 
 fclean: clean
 	rm -f $(NAME)
