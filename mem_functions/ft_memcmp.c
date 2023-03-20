@@ -6,12 +6,28 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 18:30:00 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/10 11:38:31 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/20 12:01:48 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
+/* 
+ * Function: ft_memmove
+ * ----------------------------
+ *   Compares byte string s1 against byte string s2.
+ *   Both strings are assumed to be n bytes long.
+ *   function copies n bytes from memory area src
+ *   to memory area dst.
+ *
+ *   s1: destination memory area.
+ *   s2: source memory area.
+ *   n: bytes that are goint to be copied
+ * 
+ *   Returns: zero if the two strings are identical.
+ *   if not, the difference between the first two 
+ * 	 differing bytesreturns the original value of dst.
+ */
 int	ft_memcmp(void *s1, void *s2, size_t n)
 {
 	unsigned char	*str1;

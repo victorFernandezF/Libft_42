@@ -6,12 +6,22 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 19:14:12 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/10 11:54:57 by victofer         ###   ########.fr       */
+/*   Updated: 2023/03/20 10:54:29 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
+/*
+ * Function: ft_strdup
+ * ----------------------------
+ *   Reserves enought memory to make a copy of the string
+ *   and does the copy
+ *
+ * 	 s1: String to be copied 
+ *
+ *   Returns: A copy of s1.
+ */
 char	*ft_strdup(char *s1)
 {
 	char	*str;
