@@ -6,7 +6,7 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 15:27:10 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 12:16:48 by victofer         ###   ########.fr       */
+/*   Updated: 2023/04/11 11:20:07 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,14 @@
 # endif
 
 /* B O N U S */
+typedef struct s_lst	t_lst;
+
+typedef struct s_lst
+{
+	int		data;
+	t_lst	*next;
+}			t_lst;
+
 typedef struct s_list
 {
 	void			*content;
@@ -53,6 +61,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strtrim(char *s1, char *set);
 char	**ft_split(char *s, char c);
+char	**ft_split_2(char *str);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
@@ -92,6 +101,8 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_lst	*sort_list(t_lst *lst, int (*cmp)(int, int));
+
 
 //	---- FT_PRINTF ----
 int		ft_printf(char const *input, ...);
