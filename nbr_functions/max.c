@@ -6,21 +6,18 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 18:16:13 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 12:12:50 by victofer         ###   ########.fr       */
+/*   Updated: 2023/06/28 12:24:01 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-/* 
- * Function: ft_max
- * ----------------------------
- *   Find the maximun number of an array of ints.
- *
- *   tab: Array of ints.
- *   len: size of the array.
+/**
+ * @brief Finds the maximun number of an array of ints.
  * 
- *   Returns: the maximun number of the array;
+ * @param tab Array of ints.
+ * @param len size of the array.
+ * @return The maximun number of the array;
  */
 int	max(int *tab, unsigned int len)
 {

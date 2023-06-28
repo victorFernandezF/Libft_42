@@ -6,21 +6,18 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 18:28:06 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 12:13:03 by victofer         ###   ########.fr       */
+/*   Updated: 2023/06/28 12:24:16 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-/* 
- * Function: ft_max
- * ----------------------------
- *   Find the minimun number of an array of ints.
- *
- *   tab: Array of ints.
- *   len: size of the array.
+/**
+ * @brief Finds the minimun number of an array of ints.
  * 
- *   Returns: the minimun number of the array;
+ * @param tab Array of ints.
+ * @param len size of the array.
+ * @return The minimun number of the array;
  */
 int	min(int *tab, unsigned int len)
 {

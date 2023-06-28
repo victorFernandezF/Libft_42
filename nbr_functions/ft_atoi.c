@@ -6,7 +6,7 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 19:48:27 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 12:09:35 by victofer         ###   ########.fr       */
+/*   Updated: 2023/06/28 12:22:12 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,11 @@ static int	ft_is_nbr(char n)
 	return (0);
 }
 
-/* 
- * Function: ft_atoic
- * ----------------------------
- *   Converts a string with digits in an integer.
- *
- *   str: String to be converted.
+/**
+ * @brief Converts a string with digits in an integer.
  * 
- *   Returns: An integer.
+ * @param str String to be converted.
+ * @return int with the string converted to number.
  */
 int	ft_atoi(const char *str)
 {
