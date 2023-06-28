@@ -6,7 +6,7 @@
 #    By: victofer <victofer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/26 09:36:58 by victofer          #+#    #+#              #
-#    Updated: 2023/04/11 11:19:31 by victofer         ###   ########.fr        #
+#    Updated: 2023/06/28 12:17:59 by victofer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,13 +45,15 @@ BONUS 	=	list_functions/ft_lstnew.c list_functions/ft_lstadd_front.c list_functi
 OBJ		=	$(SRC:.c=.o)
 OBJ_B	=	$(BONUS:.c=.o)
  
-# - COLOURS - 
-G		=	\033[0;32m
-R		=	\033[0;31m
-B		=	\033[0;34m
-Y 		=	\033[0;93m
-M		=	\033[0;95m
-E		=	\033[0m
+# T E X T   S T U F F
+G		= \033[0;92m
+R		= \033[0;31m
+B		= \033[0;96m
+Y		= \033[0;33m
+WY		= \033[0;93m
+M		= \033[0;95m
+BOLD	= \033[0;1m
+E		= \033[0m
 
 #  - RULES - 
 all: $(NAME)
@@ -64,17 +66,19 @@ bonus: $(OBJ) $(OBJ_B)
 	ar rcs $(NAME) $(OBJ) $(OBJ_B)
 	@echo "$(G) $@ Bonus Compiled successfully $(E)"
 
+clean:
+	rm -f $(OBJ) $(OBJ_B)
+	@echo "$(M) Everything cleaned $(E)"
+
 norminette:
 	@echo ""
 	@echo "$(Y) ---- N O R M I N E T T E ----$(E)"
 	@sleep 1
 	@echo "$(BOLD)"
 	@norminette
+	@echo ""
 	@echo "$(Y)------- $(G)EVERITHING OK$(Y) -------$(E)"
 
-clean:
-	rm -f $(OBJ) $(OBJ_B)
-	@echo "$(M) Everything cleaned $(E)"
 
 fclean: clean
 	rm -f $(NAME)
