@@ -6,26 +6,22 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 11:11:36 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 10:51:24 by victofer         ###   ########.fr       */
+/*   Updated: 2023/06/28 12:37:05 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-/*
- * Function: ft_strncmp
- * ----------------------------
- *   Compares not more than n characters.
- *
- * 	 s1: String to be compared 
- *   s2: String to be compared.
- *   n: Size_t with the number of chars to compare. 
- *  
- *   Returns: An integer greater than, equal to, or less than 0,
- * 	 according as the string s1 is greater than,
- * 	 equal to, or less than the string s2.
+/**
+ * @brief Compares not more than n characters.
+ * 
+ * @param s1 String to be compared 
+ * @param s2 String to be compared.
+ * @param n Size_t with the number of chars to compare.
+ * @return An integer greater than, equal to, or less than 0,
+ * according as the string s1 is greater than,
+ * equal to, or less than the string s2.
  */
-
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;

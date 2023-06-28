@@ -6,7 +6,7 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 10:38:20 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 18:19:51 by victofer         ###   ########.fr       */
+/*   Updated: 2023/06/28 12:31:06 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,15 +50,12 @@ static char	*word(char *str, int start, int end)
 	return (word);
 }
 
-/*
- * Function: ft_split
- * ----------------------------
- *   Splits the words of a string by a character.
- *
- * 	 s: String that we want to split.
- *   c: Separator. The string will be separated by this character
- *  
- *   Returns: An array of strings with each words of the string.
+/**
+ * @brief Splits the words of a string by a character.
+ * 
+ * @param s String that we want to split.
+ * @param c Separator. The string will be separated by this character
+ * @return An array of strings with each words of the string.
  */
 char	**ft_split(char *s, char c)
 {

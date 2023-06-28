@@ -6,7 +6,7 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 17:19:08 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 18:20:11 by victofer         ###   ########.fr       */
+/*   Updated: 2023/06/28 12:29:04 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,14 +64,11 @@ static char	*ft_make_itoa(char *itoa, int n, int len)
 	return (itoa);
 }
 
-/*
- * Function: ft_itoa
- * ----------------------------
- *   Converts a number into a string. (reverse of ft_atoi)
- *
- *   n: Number to be converted.
- *  
- *   Returns: A String whit the given number.
+/**
+ * @brief Converts a number into a string. (reverse of ft_atoi)
+ * 
+ * @param n Number to be converted.
+ * @return String whit the given number.
  */
 char	*ft_itoa(int n)
 {

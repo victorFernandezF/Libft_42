@@ -6,7 +6,7 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 11:13:34 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 10:58:09 by victofer         ###   ########.fr       */
+/*   Updated: 2023/06/28 12:34:19 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,12 @@ static char	*ft_join(char *strjoin, char *s1, char *s2)
 	return (strjoin);
 }
 
-/*
- * Function: ft_strjoin
- * ----------------------------
- *   Joins s1 and s2 in a new string.
- *
- *   s1: String to be joined.
- *   s2: String to be joined.
- *  
- *   Returns: A string whit the resule of join s1 and s2.
+/**
+ * @brief Joins s1 and s2 in a new string.
+ * 
+ * @param s1 String to be joined.
+ * @param s2 String to be joined.
+ * @return A string whit the resule of join s1 and s2.
  */
 char	*ft_strjoin(char *s1, char *s2)
 {

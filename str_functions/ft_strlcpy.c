@@ -6,21 +6,19 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 13:38:49 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/17 11:34:22 by victofer         ###   ########.fr       */
+/*   Updated: 2023/06/28 12:35:23 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-/* 
- * Function: ft_strlcby
- * ----------------------------
- *   Copies up to dstsize - 1 characters from the string src to dst
- *
- *   dst: variable where the function will copy 
- *   src: variable that we want to copy
- * 	 dstsize: size we want to copy
- *   Returns: The total length of the string they tried to create
+/**
+ * @brief Copies up to dstsize - 1 characters from the string src to dst
+ * 
+ * @param dst variable where the function will copy 
+ * @param src variable that we want to copy
+ * @param dstsize size we want to copy
+ * @return size_t The total length of the string they tried to create
  */
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

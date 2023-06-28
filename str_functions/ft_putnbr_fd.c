@@ -6,7 +6,7 @@
 /*   By: victofer <victofer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 19:34:39 by victofer          #+#    #+#             */
-/*   Updated: 2023/03/20 10:46:49 by victofer         ###   ########.fr       */
+/*   Updated: 2023/06/28 12:30:11 by victofer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,11 @@ static void	ft_print_limit(int fd)
 	ft_putnbr_fd(147483648, fd);
 }
 
-/*
- * Function: ft_putnbr_fd
- * ----------------------------
- *   Writes a number in the given file descriptor.
- *
- *   n: number to be writen. 
- *   fd: file descriptor.
- *  
+/**
+ * @brief Writes a number in the given file descriptor.
+ * 
+ * @param n number to be writen. 
+ * @param fd file descriptor.
  */
 void	ft_putnbr_fd(int n, int fd)
 {
